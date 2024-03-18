@@ -24,10 +24,68 @@ h2{
   height: 100vh;
   background-color: var(--green-color);
 }
+.section__contact{
+  background-color: var(--green-color);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
 .section__container{
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+.form__container{ /*Need to fix size and position*/
+  height: 50vh;
+  background-color: var(--orange-color);
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+.form{ /*Do we keep labels ???? fix button placement , add instead of "Envoyer" ???*/
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.select__container{
+  margin-bottom: 10px;
+}
+.ui__select_default{
+    outline: none;
+    background: transparent;
+    border: none;
+    font-family: inherit;
+    line-height: inherit;
+    font-size: inherit;
+}
+.ui__select{
+  background-color: #f8ad3c;
+  color: var(--white-color);
+  border: 1px solid #59784e;
+  padding: 5px;
+  border-radius: 5px; 
+  width: 150px; 
+}
+.ui__select option{
+  background-color: #f8ad3c;
+  color: var(--white-color);
+}
+.form__input {
+  background-color: var(--orange-color);
+  color: var(--white-color); 
+  border: 1px solid #59784e;
+  padding: 5px;
+  border-radius: 5px;
+  width: 200px;
+  margin-bottom: 10px;
+}
+.email__input{
+  width: 500px;
+  padding: 5px;
+}
+.message__input{/*Fix position*/
+  width: 500px;
+  height: 100px;
 }
 .gallery{
   margin-top: 32px;
