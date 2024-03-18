@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+:root {
+  --white-color: #fff8e9;
+  --black-color: #000000;
+  --green-color: #729d63;
+  --green-dark-color: #59784e;
+  --orange-color: #f8ad3c;
+
+  --body-font: "Poppins", sans-serif;
+  --title-font: "Protest Riot", sans-serif;
+  --logo-font: "lobster", cursive;
+}
+body{
+  font-family: var(--body-font);
+  color: var(--white-color);
+}
+header h1{
+    font-family: var(--logo-font);
+}
+h2{
+  padding-bottom: 32px;
+}
+.section__team{
+  height: 100vh;
+  background-color: var(--green-color);
+}
+.section__container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.gallery{
+  margin-top: 32px;
+  display: flex;
+}
+.img__wrap{
+  width: 350px;
+  height: 250px;
+  margin: 8px;
+}
+.img__wrap img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
