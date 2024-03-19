@@ -7,38 +7,31 @@
     <title>Match Tea</title>
 </head>
 <body>
-    <main>
+    <main class="main"> 
         <section class="section section__contact">
-            <div class="container section__container">
-                <h2>Nous Contacter :</h2>
-                <div class="form__container container">
-                    <form for="" class="form" action="">
-                        <div class="select__container">
-                            <label for="gender">Civilité :</label>
-                            <select name="gender" id="gender" class="ui__select_default ui__select">
-                                <option value="none" selected>Genre</option>
-                                <option value="Homme">Homme</option>
-                                <option value="Femme">Femme</option>
-                                <option value="Autre">Autre</option>
-                            </select>
-                        </div>
+            <div class="form__container container">
+                <h2 class="section__title">Nous Contacter</h2>
+                <form for="" class="form" action="">
+                    <div class="form__row">
+                        <select name="gender" id="gender" class="ui__select_default ui__select">
+                            <option value="none" selected>Genre</option>
+                            <option value="Homme">Homme</option>
+                            <option value="Femme">Femme</option>
+                            <option value="Autre">Autre</option>
+                        </select>
+                    </div>
                         <div class="name__inputs">
-                            <label for="fname">Prénom : </label>
                             <input class="form__input" type="text" name="fname" id="fname" placeholder="Prénom..">
-                            <label for="lname">Nom : </label>
                             <input class="form__input" type="text" name="lname" id="lname" placeholder="Nom..">
                         </div>
                         <div>
-                            <label for="email">Email : </label>
-                            <input class="form__input email__input" type="email" name="email" id="email" placeholder="Adresse..">
+                            <input class="form__input email__input" type="email" name="email" id="email" placeholder="Email..">
                         </div>
                         <div>
-                            <label for="message">Votre message :</label>
-                            <input class="form__input message__input" maxlength="300" type="text">
+                            <input class="form__input message__input" maxlength="300" type="text" placeholder="Votre message..">
                         </div>
-                        <button>Envoyer</button>
-                    </form>
-               </div>
+                        <button class="button">Envoyer</button>
+                </form>
             </div>
         </section>
     </main>
