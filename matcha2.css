@@ -10,16 +10,16 @@
   --title-font: "Protest Riot", sans-serif;
   --logo-font: "lobster", cursive;
 }
+
 body{
   font-family: var(--body-font);
   color: var(--white-color);
 }
+
 header h1{
     font-family: var(--logo-font);
 }
-h2{
-  padding-bottom: 32px;
-}
+
 .section__team {
   height: 100vh;
   background-color: var(--green-color);
@@ -30,7 +30,19 @@ h2{
   display: flex;
   justify-content: center;
 }
-
+.section__order{
+  background-color: var(--green-color);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section__past-order{
+  background-color: var(--green-color);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 .section__container {
   display: flex;
   flex-direction: column;
@@ -49,9 +61,11 @@ h2{
   flex-direction: column;
   align-items: flex-start;
 }
+
 .select__container {
   margin-bottom: 10px;
 }
+
 .ui__select_default {
   outline: none;
   background: transparent;
@@ -60,15 +74,18 @@ h2{
   line-height: inherit;
   font-size: inherit;
 }
+
 .ui__select {
   color: var(--black-color);
   border: 1px solid #59784e;
   padding: 5px;
   width: 150px;
 }
+
 .ui__select option {
-  color: var(--white-color);
+  color: var(--black-color);
 }
+
 .form__input {
   background-color: transparent;
   color: var(--black-color);
@@ -77,38 +94,60 @@ h2{
   width: 200px;
   margin-bottom: 10px;
 }
+
 .email__input {
   width: 500px;
   padding: 5px;
 }
+
 .message__input {
   width: 500px;
   height: 100px;
 }
+
 .team__gallery {
   margin-top: 32px;
   display: flex;
 }
+
 .team__img {
   width: 350px;
   height: 250px;
   margin: 8px;
 }
+
 .team__img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 .section__profil{
   background-color: var(--green-color);
   height: 100vh;
 }
+
 .form__profil_container{
   display: flex;
   flex-direction: column ;
   justify-content: center;
   align-items: center;
 }
+
 .email__input_profil {
   width: 415px;
+}
+.order__container{
+  background-color: var(--white-color);
+  color: var(--black-color);
+  width: 80%;
+  align-self: center;
+}
+.order__card{
+  display: flex;
+  flex-direction: column;
+}
+.order__card-item{
+  display: flex;
+  align-items: center;
 }
