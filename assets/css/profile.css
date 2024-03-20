@@ -1,0 +1,29 @@
+.section__profil {
+  min-height: 100vh;
+  background-color: var(--green-color);
+}
+
+.form__profil_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form__input {
+  background-color: var(--white-color);
+  padding: 10px;
+  border: 1px solid var(--black-color);
+  box-shadow: var(--white-color) 4px 4px 0 0, var(--black-color) 4px 4px 0 1px;
+}
+
+.name__inputs {
+  display: flex;
+  gap: 1rem;
+}

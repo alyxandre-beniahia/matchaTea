@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/matcha2.css">
+    <meta charset="UTF-8">
+    <!-- IMPORTS ICONS-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match Tea</title>
+</head>
+
+<body>
+    <header class="header" id="home">
+        <div class="header__container container">
+            <div class="header__logo">
+                <img class="header__img" src="./assets/img/logo.png" alt="logo">
+            </div>
+            <a href="./index.html">
+                <h1 class="header__title">Matcha tea</h1>
+            </a>
+            <div class="header__profile">
+                <a class="profile" href="./choiceprofile.html">
+                    <i class="ri-account-circle-line"></i>
+                    Profile
+                </a>
+                <ul class="profile__sous">
+                    <li><a href="./profile.html">Modifier profile</a></li>
+                    <li><a href="./commande.html">Mes commandes</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="sidebar">
+        <div class="sidebar__menu">
+            <ul class="sidebar__list">
+                <li class="sidebar__item"><a href="./index.html" class="sidebar__link">Home</a></li>
+                <li class="sidebar__item"><a href="./vente.html" class="sidebar__link">Nos tea</a></li>
+                <li class="sidebar__item"><a href="./apropos.html" class="sidebar__link">A propos</a></li>
+                <li class="sidebar__item"><a href="" class="sidebar__link">Histoire</a></li>
+                <li class="sidebar__item"><a href="./contact.html" class="sidebar__link">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <main class="main">
+        <section class="section section__contact">
+            <div class="container section__container">
+                <h2 class="section__title">Nous Contacter</h2>
+                <p class="section__subtitle"></p>
+                <form for="" class="form" action="">
+                    <div class="select__container">
+                        <!-- <label for="gender">Civilité :</label> -->
+                        <select name="gender" id="gender" class="ui__select_default ui__select">
+                            <option value="none" selected>Genre</option>
+                            <option value="Homme">Homme</option>
+                            <option value="Femme">Femme</option>
+                            <option value="Autre">Autre</option>
+                        </select>
+                    </div>
+                    <div class="name__inputs">
+                        <!-- <label for="fname">Prénom : </label> -->
+                        <input class="form__input" type="text" name="fname" id="fname" placeholder="Prénom..">
+                        <!-- <label for="lname">Nom : </label> -->
+                        <input class="form__input" type="text" name="lname" id="lname" placeholder="Nom..">
+                    </div>
+                    <div>
+                        <!-- <label for="email">Email : </label> -->
+                        <input class="form__input email__input" type="email" name="email" id="email"
+                            placeholder="Adresse..">
+                    </div>
+                    <div>
+                        <!-- <label for="message">Votre message :</label> -->
+                        <textarea class="form__input message__input"></textarea>
+                    </div>
+                    <button class="button form__button">Envoyer</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__box">
+                <img src="./assets/img/logo.png" alt="logo">
+            </div>
+            <div class="footer__box">
+                <h3>Coordonnées</h3>
+                <p>8 rue d'Hozier 13002 Marseille</p>
+            </div>
+            <div class="footer__box">
+                <h3>Matcha Tea</h3>
+                <ul class="footer__menu">
+                    <li class="footer__item"><a href="./index.html">Home</a></li>
+                    <li class="footer__item"><a href="./vente.html">Nos tea</a></li>
+                    <li class="footer__item"><a href="./apropos.html">A propos</a></li>
+                    <li class="footer__item"><a href="./histoire.html">Histoire</a></li>
+                    <li class="footer__item"><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <p>La Plateforme 2024</p>
+        </div>
+    </footer>
+</body>
+
+</html>
