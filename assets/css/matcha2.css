@@ -1,0 +1,111 @@
+.section__team {
+  min-height: 100vh;
+  background-color: var(--green-color);
+}
+.section__contact {
+  background-color: var(--green-color);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.section__container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.form {
+  background-color: var(--white-color);
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border: 1px solid var(--black-color);
+  box-shadow: var(--white-color) 4px 4px 0 0, var(--black-color) 4px 4px 0 1px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.select__container {
+  margin-bottom: 10px;
+}
+.ui__select_default {
+  outline: none;
+  background: transparent;
+  border: none;
+  font-family: inherit;
+  line-height: inherit;
+  font-size: inherit;
+}
+.ui__select {
+  color: var(--black-color);
+  border: 1px solid #59784e;
+  padding: 5px;
+  width: 150px;
+}
+.ui__select option {
+  color: var(--white-color);
+}
+.form__input {
+  background-color: transparent;
+  color: var(--black-color);
+  border: 1px solid #59784e;
+  padding: 5px;
+  width: 200px;
+  margin-bottom: 10px;
+}
+.email__input {
+  width: 500px;
+  padding: 5px;
+}
+.message__input {
+  /*Fix position*/
+  width: 500px;
+  height: 100px;
+}
+
+.form__button {
+  width: 100%;
+}
+.team__gallery {
+  margin-top: 32px;
+  display: flex;
+}
+
+.team__gallery {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: stretch;
+  gap: 3rem;
+}
+
+.team__card {
+  background-color: var(--white-color);
+  border: 1px solid var(--black-color);
+  box-shadow: var(--white-color) 4px 4px 0 0, var(--black-color) 4px 4px 0 1px;
+  padding: 1rem;
+  display: flex;
+  gap: 0.6rem;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card__img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 790px) {
+  .team__gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .team__gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
