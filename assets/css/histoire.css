@@ -1,0 +1,29 @@
+.section__history {
+  background-color: var(--orange-color);
+}
+
+.history__content {
+  background-color: var(--white-color);
+  border: 1px solid var(--black-color);
+  box-shadow: var(--white-color) 4px 4px 0 0, var(--black-color) 4px 4px 0 1px;
+  padding: 2rem;
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.history__img {
+  width: 100%;
+}
+
+.history__content__title {
+  font-family: var(--title-font);
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 790px) {
+  .history__content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

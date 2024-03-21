@@ -66,8 +66,8 @@ li {
 @media screen and (max-width: 790px) {
   :root {
     --h1-fs: 2.5rem;
-    --normal-fs: 0.6rem;
-    --small-fs: 0.4rem;
+    --normal-fs: 0.8rem;
+    --small-fs: 0.6rem;
   }
 }
 
@@ -202,16 +202,6 @@ li {
   color: var(--white-color);
 }
 
-.profile__toggle {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  opacity: 0;
-}
-.profile__toggle:checked ~ .profile__sous {
-    display: block;
-}
-
 @media screen and (max-width: 790px) {
   .header__profile {
     min-width: 100px;
@@ -315,10 +305,16 @@ li {
   .footer {
     margin: 0;
   }
+
+  .footer__container {
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
 /* HOME */
 
 .section__home {
+  min-height: 90vh;
   background-color: var(--green-color);
   color: var(--white-color);
 }
