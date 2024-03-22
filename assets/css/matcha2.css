@@ -17,15 +17,15 @@
 
 .form {
   background-color: var(--white-color);
-  height: 50vh;
   display: flex;
-  align-items: center;
   justify-content: center;
   padding: 2rem;
   border: 1px solid var(--black-color);
   box-shadow: var(--white-color) 4px 4px 0 0, var(--black-color) 4px 4px 0 1px;
   flex-direction: column;
   align-items: flex-start;
+  min-width: 450px;
+  width: 500px;
 }
 .select__container {
   margin-bottom: 10px;
@@ -45,24 +45,28 @@
   width: 150px;
 }
 .ui__select option {
-  color: var(--white-color);
+  color: var(--black-color);
 }
 .form__input {
   background-color: transparent;
   color: var(--black-color);
   border: 1px solid #59784e;
   padding: 5px;
-  width: 200px;
   margin-bottom: 10px;
+  width: 100%;
 }
 .email__input {
-  width: 500px;
   padding: 5px;
 }
 .message__input {
   /*Fix position*/
-  width: 500px;
   height: 100px;
+}
+
+.name__inputs {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
 }
 
 .form__button {
@@ -101,6 +105,11 @@
 @media screen and (max-width: 790px) {
   .team__gallery {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .name__inputs {
+    flex-direction: column;
+    gap: 0;
   }
 }
 
