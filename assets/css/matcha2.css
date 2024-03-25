@@ -24,8 +24,6 @@
   box-shadow: var(--white-color) 4px 4px 0 0, var(--black-color) 4px 4px 0 1px;
   flex-direction: column;
   align-items: flex-start;
-  min-width: 450px;
-  width: 500px;
 }
 .select__container {
   margin-bottom: 10px;
